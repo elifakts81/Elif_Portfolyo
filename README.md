@@ -10,13 +10,12 @@ Web geliştirme ve yazılım dünyasına adım atarken, öğrendiğim HTML ve CS
 * CSS3
 
 ## 📸 Ekran Görüntüsü
-## 📸 Ekran Görüntüsü
 
-![Portfolyo Sitemin Ekran Görüntüsü](resimler/ekran1.jpg)
-![Portfolyo Sitemin Ekran Görüntüsü](resimler/ekran2.png)
-![Portfolyo Sitemin Ekran Görüntüsü](resimler/ekran3.png)
-![Portfolyo Sitemin Ekran Görüntüsü](resimler/ekran4.png)
-![Portfolyo Sitemin Ekran Görüntüsü](resimler/ekran5.png)
+![Portfolyo Sitemin Ekran Görüntüsü](resimler/ekran_goruntusu/ekran1.jpg)
+![Portfolyo Sitemin Ekran Görüntüsü](resimler/ekran_goruntusu/ekran2.png)
+![Portfolyo Sitemin Ekran Görüntüsü](resimler/ekran_goruntusu/ekran3.png)
+![Portfolyo Sitemin Ekran Görüntüsü](resimler/ekran_goruntusu/ekran4.png)
+![Portfolyo Sitemin Ekran Görüntüsü](resimler/ekran_goruntusu/ekran5.png)
 
 ## 📂 İletişim
 İletişim için: [aktaselif903@gamil.com]
