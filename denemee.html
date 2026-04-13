@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="portfolyo">
+    <title>Benim Portfolyom</title>
+   
+    <style>
+        
+            * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+           .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            background: #2c3650;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 22px;
+            margin: 20px;
+            padding-left: 36%;
+        }
+
+        body {
+      margin: 0;
+      padding: 0;
+      line-height: 1.7;
+      background-color:rgb(210, 200, 200);
+      scroll-behavior: smooth;
+    }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #3498db;
+        }
+        
+        .container {
+            padding: 3rem 5%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2.2rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 50px;
+            height: 4px;
+            background: #3498db;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+     .about {
+            background: linear-gradient(135deg, #2c3650 0%, #3a4869 100%);
+            color: white; 
+            background:  #2c3650;
+            text-decoration-color: aliceblue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style: italic;          
+            margin: 50px auto;
+            width: 80%;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(250, 250, 250, 0.05);
+            min-height: 80vh; 
+            justify-content: center; 
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .about-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    min-height: 90vh; 
+    background: transparent; 
+    padding-top: 100px; 
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-title {
+    font-size: 4rem;
+    color: #2c3650;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: #7f8c8d;
+    font-weight: 400;
+}
+
+.hero-job {
+    font-size: 1.1rem;
+    color: #3498db;
+    letter-spacing: 3px;
+    margin-bottom: 1.5rem;
+    font-family: monospace; 
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 30px; 
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+
+.btn-primary {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #2c3650;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}
+
+    .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .card-info {
+            padding: 1.5rem;
+        }
+
+        .card-info h3 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .ic {
+            margin-top: 20px; 
+            margin-bottom: 20px; 
+        }
+
+      .ic img {
+            width: 250px; 
+            height: 250px; 
+            object-fit: cover;
+            border-radius: 50%; 
+            border: 5px solid rgba(255, 255, 255, 0.2); 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3); 
+}  
+
+
+        .about h2 {
+          font-size: 3rem;
+          margin-bottom: 0.5rem;
+}
+
+.about h3 {
+          font-size: 1.2rem;
+          font-weight: 300; 
+          letter-spacing: 2px;
+          color: #3498db; 
+}
+      .bg-white {
+           background: #fff;
+        }
+
+       .flex-content {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           gap: 20px;
+        }
+        
+        .text-area {
+            padding: 20px;
+            border: none;
+            background: transparent;
+        }
+   
+
+        .image-area { flex: 1; min-width: 300px; }
+ 
+           .rounded-img {
+            width: 80%;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+
+   footer 
+   { 
+    text-align: center; 
+    padding: 4rem; 
+    padding-top: 80px;
+    background: #2c3e50; 
+    color: white; 
+    margin-top: 2rem; 
+    font-family: 'Times New Roman', Times, serif; 
+    display: block;
+    clear: both;
+    position: relative;
+    z-index: 1;
+    border-radius: 12px;
+    font-size: 24px;
+}
+
+.kalp {
+    color: rgb(253, 253, 253);
+    font-size: 54px;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle; 
+    margin-left: 10px;
+}
+
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">ELİF AKTAŞ</div>
+          <nav>
+            <ul class="nav-links">
+                <li><a href="#anasayfa">Anasayfa</a></li>
+                <li><a href="#sevdiğim">Sevdiğim Şeyler</a></li>
+                <li><a href="#ben">Hakkımda</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div id="anasayfa" class="about-hero container">
+    <div class="hero-content">
+        <h3 class="hero-subtitle">Merhaba, Ben</h3>
+        <h1 class="hero-title">Elif Aktaş</h1>
+        <h2 class="hero-job">YAZILIM MÜHENDİSLİĞİ ÖĞRENCİSİ</h2>
+        <p class="hero-description">İnönü Üniversitesi'nde 1. sınıf öğrencisiyim. Web ve uygulama geliştirme dünyasına adım attım, C ve Front-end teknolojileri üzerine çalışıyorum.</p>
+        <a href="#ben" class="btn-primary">Hakkımda Daha Fazlası</a>
+    </div>
+    <div class="hero-image">
+        <img src="resimler/wtp.jpeg" alt="Elif Aktaş">
+    </div>
+</div>
+
+    
+    <section id="sevdiğim" class="container">
+        <h2 class="section-title" style="border-radius: 12px;">Sevdiğim Şeyler</h2>
+        <div class="card-grid">
+            <div class="card">
+                <img src="resimler/cilek.jpg" alt="Cilek">
+                <div class="card-info">
+                    <h3>Çilekler</h3>
+                    <p>"Çilek, benim için yazın en saf ve en taze neşesi. O kendine has kokusu ve parlak kırmızı rengiyle, karmaşık günlerin içinde bile yüzümde küçük bir tebessüm yaratmayı başarıyor. Dalından koparıldığı anki tazeliği, hayatın içindeki o en yalın ve güzel anların bir özeti gibi.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="resimler/kedi.jpg" alt="kis">
+                <div class="card-info">
+                    <h3>Kış</h3>
+                    <p>Kışın kendine has bir dinginliği var. Her yerin sessizliğe büründüğü, dışarının soğuğuna inat sıcak bir kahveyle kod yazmanın veya bir kitapta kaybolmanın mevsimi benim için. Karın yarattığı o temiz ve düzenli görüntüyü, yazılımın hata ayıklama (debugging) sürecinden sonraki o 'kusursuz çalışan kod' hissine benzetiyorum. Kış, aslında bana kendi iç dünyama dönüp odaklanmam gerektiğini hatırlatan bir mola gibi</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="resimler/araba.jpg" alt="Araba">
+                <div class="card-info">
+                    <h3>Arabalar</h3>
+                    <p>Yazılımın karmaşık dünyasında olduğu gibi, otomobillerin mekanik ve elektronik uyumuna da büyük bir hayranlık duyuyorum. Benim için otomobiller sadece birer ulaşım aracı değil; mühendisliğin, tasarımın ve teknolojinin kusursuz bir buluşma noktasıdır.Motor kaputunun altındaki mühendislik zekasını incelemek, tıpkı kod satırlarını analiz etmek gibi, bir sistemin nasıl çalıştığını anlamanın en keyifli yollarından biri.
+</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ben" class="bg-white"> 
+    <div class="container"> 
+        <h2 class="section-title">Benim hakkımda;</h2> 
+        
+        <div class="flex-content"> 
+            <div class="text-area"> 
+            
+                <h4>Merhaba, Ben Elif 👋<br></h4> 
+                <p> 
+                🎂 Doğum: 18 Ağustos 2006<br> 
+                📍 Memleket: Iğdır<br> 
+                💻 Alan: Yazılım Mühendisliği<br> 
+                🎯 Hedef: Uygulama geliştirme / Web geliştirme<br>
+                 &#127979; Okul: İnönü Üniversitesi<br> 
+                 &#128150; Sınıf: 1.Sınıf 
+                </p> 
+                </div>
+
+                <div class="text-area"> 
+                    <h4>Şuan ne yapıyorum?</h4> 
+                    <p>&#8594;Şu anda web geliştirme ve C dili üzerine çalışıyorum.Şuanlık ilgim uygulama geliştiriciliği ve Web gibi front-end odaklı yazılım geliştirme bölümlerindedir.</p> 
+                </div> 
+                
+            
+            <div class="text-area"> 
+                <p> 
+                    <h4 style="flex: 1 1 100%;">Hedeflerim Neler?</h4> 
+                    <p>&#8594;Özellikle yazılım alanında İngilizce kaynakları rahatça <br>anlayabilecek seviyeye gelmek istiyorum.İşe yarar ve <br>güzel projelerde çalışıp kendimi geliştirmek istiyorum.</p> 
+                </p> 
+            </div> 
+            <div class="text-area">
+                 <h4>Nelerden Hoşlanırım?</h4>
+                 <p>&#8594;Aksiyon ve fantastik türünde filmler izlemeyi severim.Kitap okumak ve çizim yapmak hergün yaptığım hobiler olmasada gerçekten keyif aldığım şeylerdir.
+                 </p>
+            </div>   
+           </div> 
+        </div> 
+    </section>
+
+    <footer>
+        <p>&copy; İlginiz için teşekkürler! <span class="kalp">♥</span></p>
+    </footer>
+
+</body>
+</html>
