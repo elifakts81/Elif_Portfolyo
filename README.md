@@ -18,4 +18,4 @@ Web geliştirme ve yazılım dünyasına adım atarken, öğrendiğim HTML ve CS
 ![Portfolyo Sitemin Ekran Görüntüsü](resimler/ekran_goruntusu/ekran5.png)
 
 ## 📂 İletişim
-İletişim için: [aktaselif903@gamil.com]
+İletişim için: [aktaselif903@gmamil.com]
