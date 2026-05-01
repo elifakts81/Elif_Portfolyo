@@ -11,7 +11,7 @@ Web geliştirme ve yazılım dünyasına adım atarken, öğrendiğim HTML ve CS
 
 ## 📸 Ekran Görüntüsü
 
-![Portfolyo Sitemin Ekran Görüntüsü](resimler/ekran_goruntusu/ekran1.jpg)
+![Portfolyo Sitemin Ekran Görüntüsü](resimler/ekran_goruntusu/ekran1.png)
 ![Portfolyo Sitemin Ekran Görüntüsü](resimler/ekran_goruntusu/ekran2.png)
 ![Portfolyo Sitemin Ekran Görüntüsü](resimler/ekran_goruntusu/ekran3.png)
 ![Portfolyo Sitemin Ekran Görüntüsü](resimler/ekran_goruntusu/ekran4.png)
